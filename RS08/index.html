@@ -1,253 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="RS08 – Revolutionizing Fitness and Web Solutions. Explore our innovative gym management systems, modern web development tools, and performance-optimized applications.">
-    <meta name="keywords" content="RS08, fitness, web development, gym management, high-performance coding, web apps, responsive design, JavaScript, HTML5, SEO">
+    
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="description" content="RS08 - Revolutionary fitness management solutions, cutting-edge gym software, and advanced web development tools. Transform your fitness business with our innovative digital solutions.">
+    <meta name="keywords" content="gym management software, fitness technology, workout tracking, web development, fitness apps, gym analytics, performance tracking, digital fitness solutions">
     <meta name="author" content="RS08 Team">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
     <meta name="email" content="gymodd900@mail4.uk">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="RS08 – Fitness and Web Development Hub">
-    <meta property="og:description" content="RS08 offers modern fitness web solutions, gym management tools, and performance-driven web projects. Explore now!">
+    <meta property="og:title" content="RS08 | Advanced Fitness Management Solutions">
+    <meta property="og:description" content="Transform your fitness business with RS08's innovative gym management systems and cutting-edge web development solutions.">
     <meta property="og:image" content="RS08/IMG_4948.jpeg">
-    <meta property="og:image:alt" content="RS08 Gym Project">
+    <meta property="og:image:alt" content="RS08 Fitness Management Solutions">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://github.com/RS08">
+    <meta property="og:url" content="https://ladenbinosama.github.io/RS08">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="RS08 Fitness Solutions">
+    <meta property="og:site_name" content="RS08 Fitness Tech Hub">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="RS08 – Fitness and Web Development Hub">
-    <meta name="twitter:description" content="Discover innovative fitness solutions and web projects at RS08. Join the revolution in gym management and web technology!">
+    <meta name="twitter:title" content="RS08 | Fitness Management & Tech Solutions">
+    <meta name="twitter:description" content="Revolutionize your fitness business with advanced management tools and cutting-edge web solutions.">
     <meta name="twitter:image" content="RS08/IMG_4948.jpeg">
 
     <!-- Favicon -->
     <link rel="icon" href="RS08/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="RS08/apple-touch-icon.png">
+    
+    <title>RS08 | Advanced Fitness Management Solutions</title>
 
-    <!-- Title -->
-    <title>RS08 – Fitness & Web Development Hub</title>
-
-    <!-- Google Fonts for Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="RS08/styles.css">
-
-    <!-- JavaScript (Deferred for Performance) -->
-    <script src="RS08/scripts.js" defer></script>
+    <!-- Modern Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* Global Reset and Base Styles */
+        :root {
+            --primary-color: #00b4db;
+            --secondary-color: #0083b0;
+            --dark-color: #1a1a1a;
+            --light-color: #ffffff;
+            --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            background-color: #f8f9fa;
         }
 
-        h1, h2 {
-            font-weight: 700;
-            color: #007bff;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        /* Header Styles */
-        header {
-            background: url('RS08/IMG_4948.jpeg') no-repeat center center/cover;
-            color: #fff;
-            padding: 120px 20px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        header p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
-            font-weight: 300;
-        }
-
-        /* Main Content Styles */
         .container {
-            width: 80%;
-            margin: 0 auto;
             max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
         }
 
-        section {
-            padding: 60px 0;
-            background-color: #fff;
-        }
-
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        section ul {
-            list-style-type: none;
-            margin: 20px 0;
-        }
-
-        section li {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            line-height: 1.6;
-            padding-left: 20px;
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('RS08/IMG_4948.jpeg') no-repeat center/cover;
+            display: flex;
+            align-items: center;
             position: relative;
+            overflow: hidden;
         }
 
-        section li:before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #007bff;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            padding: 18px 35px;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            margin-top: 20px;
+        .hero__content {
+            color: var(--light-color);
+            max-width: 800px;
+            margin: 0 auto;
             text-align: center;
-            transition: background-color 0.3s ease;
-            text-transform: uppercase;
+            padding: 2rem;
         }
 
-        .cta-button:hover {
-            background-color: #0056b3;
+        .hero__title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        /* Footer Styles */
-        footer {
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 1rem;
-            position: relative;
+        .hero__subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            margin-bottom: 2rem;
+            color: #e0e0e0;
         }
 
-        footer p {
-            font-size: 1rem;
-            margin: 0;
+        /* Features Section */
+        .features {
+            padding: 5rem 0;
+            background: #ffffff;
         }
 
-        footer a {
-            color: #fff;
+        .features__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #eaeaea;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card__icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card__icon i {
             font-size: 1.5rem;
-            margin-left: 10px;
+            color: white;
+        }
+
+        .feature-card__title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        /* Call to Action */
+        .cta {
+            padding: 5rem 0;
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn--light {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .btn--light:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 5rem 0;
+            background: #f8f9fa;
+        }
+
+        .stats__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-card {
+            padding: 2rem;
+        }
+
+        .stat-card__number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer__links {
+            list-style: none;
+        }
+
+        .footer__links li {
+            margin-bottom: 1rem;
+        }
+
+        .footer__links a {
+            color: #a0a0a0;
+            text-decoration: none;
             transition: color 0.3s ease;
         }
 
-        footer a:hover {
-            color: #007bff;
+        .footer__links a:hover {
+            color: var(--primary-color);
         }
 
-        .footer-logo {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #007bff;
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
         }
 
-        /* Copyright Warning */
-        .copyright-warning {
-            font-size: 0.85rem;
-            color: #888;
-            margin-top: 10px;
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
         }
 
-        /* Responsive Styles */
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-
-            section h2 {
-                font-size: 1.7rem;
-            }
-
             .container {
-                width: 90%;
+                padding: 0 1rem;
+            }
+
+            .footer__grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 
 <body>
+    <section class="hero">
+        <div class="hero__content animate-fadeInUp">
+            <h1 class="hero__title">RS08 Fitness Solutions</h1>
+            <p class="hero__subtitle">Transform Your Fitness Business with Advanced Technology</p>
+            <a href="#features" class="btn btn--light">Discover More</a>
+        </div>
+    </section>
 
-    <!-- Header Section -->
-    <header>
-        <h1>RS08 – Fitness & Web Development</h1>
-        <p>Your gateway to modern fitness tools and high-performance web projects</p>
-    </header>
+    <section id="features" class="features">
+        <div class="container">
+            <div class="features__grid">
+                <div class="feature-card animate-fadeInUp">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="feature-card__title">Gym Management</h3>
+                    <p>Streamline your gym operations with our comprehensive management system. Track memberships, schedules, and performance metrics effortlessly.</p>
+                </div>
 
-    <!-- Main Content -->
-    <div class="container">
-        <section>
-            <h2>About RS08</h2>
-            <p>Welcome to **RS08**, where fitness meets technology. Our projects focus on innovative solutions for gym management, performance optimization, and modern web development practices. Join us as we revolutionize the way we manage and optimize fitness routines:</p>
-            <ul>
-                <li>💪 **Gym Management Tools** – Cutting-edge systems to help gym owners manage memberships, schedules, and performance data.</li>
-                <li>🔥 **Fitness Apps and Web Solutions** – Build custom applications for fitness enthusiasts with advanced features.</li>
-                <li>🚀 **High-Performance Development** – Utilizing the latest in web technologies for fast, reliable, and scalable apps.</li>
-            </ul>
-            <a href="https://github.com/RS08" class="cta-button">Explore Projects</a>
-        </section>
+                <div class="feature-card animate-fadeInUp">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-card__title">Fitness Apps</h3>
+                    <p>Custom mobile applications designed to enhance member engagement and track fitness progress in real-time.</p>
+                </div>
 
-        <section>
-            <h2>Featured Projects</h2>
-            <p>Check out some of our latest fitness-related projects and modern web solutions:</p>
-            <ul>
-                <li>🏋️‍♂️ **Gym Management System** – Streamlining operations for gym owners with automation tools.</li>
-                <li>📱 **Fitness App** – A responsive, interactive fitness tracker that integrates with popular fitness APIs.</li>
-                <li>🛠️ **Web Development Tools** – Advanced code libraries to enhance performance in fitness applications.</li>
-            </ul>
-        </section>
-    </div>
+                <div class="feature-card animate-fadeInUp">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-card__title">Performance Analytics</h3>
+                    <p>Advanced analytics tools to monitor gym performance, member engagement, and business growth metrics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p class="footer-logo">RS08 Fitness & Web Solutions</p>
-        <p class="copyright-warning">
-            &copy; 2025 RS08. All rights reserved. Unauthorized use of images and content, including **RS08/IMG_4948.jpeg**, is prohibited and may lead to legal action.
-        </p>
-        <p>
-            <a href="https://t.me/BinLadenSources" target="_blank">
-                <i class="fab fa-telegram"></i> Join Our Telegram Channel
-            </a>
-        </p>
+    <section class="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat-card animate-fadeInUp">
+                    <div class="stat-card__number">500+</div>
+                    <p>Active Users</p>
+                </div>
+                <div class="stat-card animate-fadeInUp">
+                    <div class="stat-card__number">98%</div>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stat-card animate-fadeInUp">
+                    <div class="stat-card__number">24/7</div>
+                    <p>Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Fitness Business?</h2>
+            <p class="mb-4">Join the revolution in fitness management technology</p>
+            <a href="mailto:gymodd900@mail4.uk" class="btn btn--light">Contact Us Today</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <h3>RS08</h3>
+                    <p>Advanced fitness management solutions for modern gyms and fitness centers.</p>
+                    <div class="social-links">
+                        <a href="https://t.me/BinLadenSources" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="mailto:gymodd900@mail4.uk">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="https://t.me/BinLadenSources">Join Our Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center">
+                <p>&copy; 2025 RS08. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-</body>
+    <script>
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeInUp');
+                }
+            });
+        }, { threshold: 0.1 });
 
+        document.querySelectorAll('.feature-card, .stat-card').forEach((el) => observer.observe(el));
+    </script>
+</body>
 </html>
